@@ -18,10 +18,10 @@ use App\Category;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-// Route::get('cat',function()
-// {
-// 	return Category::all();
-// });
+Route::get('cat',function()
+ {
+ 	return Category::all();
+ });
 // Route::get('cat/{id}',function(){
 // 	$cat=Category::
 	
